@@ -1,0 +1,57 @@
+.ethiopia-info {
+  display: flex;
+  justify-content: center;
+}
+
+.ethiopia-info .ethiopia-wrapper {
+  font-family: quicksandregular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  box-sizing: border-box;
+  margin: 50px auto;
+  position: relative;
+  max-width: 1200px;
+  text-transform: none;
+}
+
+  
+.ethiopia-grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.ethiopia-content-center {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#ethiopia-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+  
+#ethiopia-info p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#ethiopia-info a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+#ethiopia-info a:hover {
+  text-decoration: underline;
+}
+
+#ethiopia-info strong {
+  font-weight: bold;
+}
+
+  

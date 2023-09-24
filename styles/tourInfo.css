@@ -1,0 +1,344 @@
+.tour-info {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.tour-info-navbar {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-height: 7rem;
+}
+
+.tour-info-navbar button {
+    height: 6rem;
+    padding: 2rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #ddd;
+    color: black;
+}
+
+.tour-info-navbar button.toggle {
+    height: 7rem;
+    background-color: #ffa347;
+    color: white;
+}
+
+.tour-info-modal {
+    width: 100%;
+    display: none;
+    padding: 3rem;
+    border-top: 4px solid #a45417;
+    background-color: #ddd;
+}
+
+.tour-info-modal.show {
+    display: block;
+}
+
+.modal-header h4 {
+    font-size: 2.5rem;
+    padding: 2rem 0;
+}
+
+.tour-info-modal p {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    padding: 1rem 0;
+}
+
+.tour-info-modal img {
+    width: 35rem;
+}
+
+/* -- TOUR INFO DETAILS -- */
+
+.modal-header.center {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.what-is-included ul {
+    position: relative;
+    left: 4rem;
+    list-style-type: circle;
+}
+
+.what-is-included ul li {
+    padding: 0.5rem 0;
+}
+
+.what-is-included ul li ul {
+    list-style-type: disc;
+    padding-top: 0.5rem;
+}
+
+.tour-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    border-top: 2px solid gray;
+}
+
+.tour-detail:last-child {
+    border-bottom: 2px solid gray;
+}
+
+.tour-detail-title {
+    width: 40%;
+}
+
+.tour-detail-description,
+.tour-detail .tour-detail-included {
+    width: 60%;
+}
+
+.tour-detail .tour-detail-included ul {
+    list-style-type: none;
+}
+
+.check-mark {
+    color: green;
+    font-size: 2.5rem;
+}
+
+.modal-footer {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid white;
+    background-color: #ddd;
+}
+
+.modal-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-footer a:hover {
+    background-color: #c8c6c6;
+}
+
+.modal-footer a:nth-child(2n) {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+/* -- ACCOMMODATION -- */
+
+.accommodation-navigation button {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #c8c6c6;
+    color: black;
+}
+
+.accommodation-content {
+    display: none;
+    padding: 2rem;
+    background-color: #c8c6c6;
+    border-top: 2px solid #919191;
+    border-left: 2px solid #919191;
+    border-right: 2px solid #919191;
+    border-bottom: 2px solid #919191;
+}
+
+.accommodation-content.show {
+    display: block;
+}
+
+/* -- Product enquiery -- */
+
+.form-main input,
+.form-main textarea {
+    border-radius: 0.5rem;
+    background-color: #c8c6c6;
+}
+
+.form-main textarea {
+    max-width: 100%;
+    max-height: 20rem;
+}
+
+.form-main .submit-btn {
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #bc6722;
+}
+
+.form-main .submit-btn:hover {
+    background-color: #eb802e;
+}
+
+@media (max-width: 952px) {
+    .tour-info-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .tour-info-navbar button {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 800px) {
+    .tour-detail {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tour-detail-title,
+    .tour-detail-description {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .tour-info-modal img {
+        width: 20rem;
+    }
+}
+
+/* styles for the login modal */
+.modal {
+    display: none; /* hide the modal by default */
+    position: fixed;
+    color:#070707;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8); /* darken the background */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .modal-content h2 {
+    text-align: center;
+  }
+  
+  
+  /* styles for the close button */
+  #modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #modal-close:hover,
+  #modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles for the form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    display: flex; /* add display flex */
+  align-items: center; /* add align items center */
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .btn {
+    background-color: #070707;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    color: var(--hvrcolor);
+  }
+  
+  /* styles for the back button */
+  .back-button {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .back-button:hover {
+    color: var(--hvrcolor);
+  }
+  
+  /* styles for the icon */
+  .icon {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .icon i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .icon i:hover {
+    color: var(--hvrcolor);
+  }
+ 
+  .form-group label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  .form-group input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  

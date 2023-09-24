@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/tourInfo.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="../tour.js"></script>
+        <script src="../about.js"></script>
+        <title>Explore Ethiopia - The future of travel</title>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <h3>Explore Ethiopia</h3>
+            <nav class="navigation-bar">
+                <a href="../index.html">Home </a>
+                <a href="../about.html">About</a>
+                <a href="../index.html#tour-packages">Tour Packages</a>
+                <a href="../index.html#contact-us">Contact Us</a>
+            </nav>
+
+            <!--Header Icon-->
+            <div class="icon">
+                <i class="fas fa-user" id="login-button"></i>
+            </div>
+
+            <!--Log in Form-->
+        
+        <div class="modal" id="login-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Login</h2>
+                    <label for="username">Username or email:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="form-group">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <p>Forgot password? <a href="#reset-password-modal">Click here</a></p>
+                    <p>Don't have an account? <a href="#create-account-modal">Create one</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="reset-password-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Reset Password</h2>
+                    <p>Enter your email address below and we'll send you instructions on how to reset your password.</p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="submit" value="Reset Password" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="create-account-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Create Account</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="submit" value="Create Account" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#login-modal">Log in</a></p>
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+        
+        </header>
+
+        <section class="home-page" id="home-page">
+            <div class="content">
+                <h3>Your Next Adventure is in Ethiopia</h3>
+                <p>Safely travel Ethiopia with us- Adventures, Accomodation, Visa, Bus Travel and more</p>
+                <p></p>
+            </div>
+
+            <div class="video-container">
+                <video src="../assets/Video1.MP4" id="video-slider" loop autoplay muted></video>
+            </div>
+            <div class="video-slider-button">
+                <button class="prev-button">&#60;</button>
+                <button class="next-button">&#62;</button>
+            </div>
+        </section>
+
+        <section class="tour-info">
+            <div class="tour-info-navbar">
+                <button class="toggle">Details</button>
+                <button>Itinerary</button>
+                <button>Transport</button>
+                <button>Pricing</button>
+                <button>Product Enquiry</button>
+                <button>Booking</button>
+            </div>
+
+            <div class="tour-info-modal tour-info-details show">
+                <div class="modal-header center">
+                    <h4>Northern Ethiopia</h4>
+                </div>
+                <p>
+                    Experience some of Northern Ethiopia most unique, historical, and Monastic visitor attractions.
+                </p>
+                <img src="../assets/north-ethiopia.jpg" alt="North Ethiopia" />
+
+                <div class="modal-header">
+                    <p><b>Our 7 days Tour of Northern Ethiopia includes</b></p>
+                </div>
+                <div class="what-is-included">
+                    <ul>
+                        <li>Deluxe Motorcoach for all transfers, touring and sightseeing</li>
+                        <li>Services of a professional  Ethiopian driver/guide throughout</li>
+                        <li>4 Night Accommodation at a Standard Hotels </li>
+                        <li>4 Breakfast & 1 Dinner at the End of the tour.This tour offers Vegetarian and Vegan food options on request.</li>
+                        <li>Blue Badge Local English speaking guide in each places </li>
+                        <li>Welcome evening cocktail reception</li>
+                        <li>Porterage at hotels throughout of 1 suitcase per person</li>
+                    </ul>
+                </div>
+
+                <div class="modal-header">
+                    <p><b>Tour Details:</b></p>
+                </div>
+    
+                <div class="tour-detail">
+                    <p class="tour-detail-title"><b>START DATE</b></p>
+                    <p class="tour-detail-description">Tour commences at Addis Abeba International Airport</p>
+                </div>
+                <div class="tour-detail">
+                    <p class="tour-detail-title"><b>END DATE</b></p>
+                    <p class="tour-detail-description">Tour finishes with on Day 7 at Addis Abeba International Airport</p>
+                </div>
+                <div class="tour-detail">
+                    <p class="tour-detail-title"><b>INCLUDED</b></p>
+                    <div class="tour-detail-included">
+                        <p class="tour-detail-description"><b>Sightseeing & Visitor Attractions</b></p>
+                        <ul>
+                            <li><span class="check-mark">&#10003;</span> Lake Tana</li>
+                            <li><span class="check-mark">&#10003;</span> Blue Nile</li>
+                            <li><span class="check-mark">&#10003;</span> The Royal Enclosure</li>
+                            <li><span class="check-mark">&#10003;</span> Achill Island</li>
+                            <li><span class="check-mark">&#10003;</span> Church of Debre Birhan</li>
+                            <li><span class="check-mark">&#10003;</span> Rock Hewan Church</li>
+                            <li><span class="check-mark">&#10003;</span> Mount Asheton</li>
+                            <li><span class="check-mark">&#10003;</span> National Museum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-info-modal tour-info-accommodation">
+                <div class="accommodation-navigation">
+                    <button>
+                        <b>DAY 1 Addis Abeba</b>
+                    </button>
+                    <div class="accommodation-content">
+                        <div class="modal-header">
+                            <p>You can explore the National Museum, which displays various ancient items, historic artifacts, archaeological discoveries, and paleontological objects, such as the 3.5 million-year-old Lucy skeleton.
+                             Additionally, you can visit the impressive St. George Cathedral, which houses fascinating contemporary paintings and mosaics. The Mercato, which is the largest open market of its kind in Africa, is also worth a visit. Finally, don't miss the breathtaking panoramic view from Mount Entoto.</p>
+                        </div>
+                    </div>
+                    <button><b>DAYS 2 Bahir Dar</b></button>
+                    <div class="accommodation-content">
+                        <div class="modal-header">
+                            <b><p>Bahir Dar, north-ethiopia</p></b>
+                        </div>
+                        <p>
+                            Bahir Dar is a charming city located on the shore of Lake Tana, Ethiopia's largest lake. Upon arrival at our hotel, we embark on a boat tour to explore Lake Tana and its 37 islands, 30 of which are home to churches and monasteries of significant cultural and historical value. During our visit, we explore the Ura Kidane Mihiret and Azwa Mariam monastery churches. Ura Kidane Mihiret is the most famous of the monasteries and houses a remarkable collection of religious icons dating back to the 16th to 18th centuries A.D. Azwa Mariam is renowned for its paintings, and we also take some time to visit the small museum.
+                        </p>
+                        <img src="..\assets\Bahir dar.jpg" alt="Bahir dar" />
+                        <p>
+                            Later in the afternoon, we head to the Blue Nile Falls, known locally as Tissisat, where the water drops 45 meters (148 feet), creating mist and rainbows. We descend to the base of the falls for a closer look and then ascend the opposite side. The entire round trip, which involves walking, takes approximately an hour. We then return to our starting point by boat, where we spend the night at the hotel.
+                        </p>
+                    </div>
+                    <button><b>DAYS 3 - 4 - Gonder</b></button>
+                    <div class="accommodation-content">
+                        <div class="modal-header">
+                            <b><p>Gonder and Simen Mountains</p></b>
+                        </div>
+                        <p>
+                            Gondar was the first capital city of the Ethiopian Empire, which began in 1632 with the reign of Fasilidas. In Gondar, there are a dozen castles built by various emperors over the course of 236 years.
+                        </p>
+                        <img src="../assets/Gonder.jpg" alt="Gonder" />
+                        <p>
+                            After traveling for a distance of 3 km from Gondar, we will make a brief stop to visit the village of the Ethiopian Felasha community (also known as Black Jews). Then, we will proceed towards the Simien Mountains, which have been declared a UNESCO World Heritage Site, and will be our destination for the day.
+                        </p>
+                    </div>
+                    <button><b>DAYS 5 - 7 - Lalibela</b></button>
+                    <div class="accommodation-content">
+                        <div class="modal-header">
+                            <b><p>Lalibela, North-ethiopia</p></b>
+                        </div>
+                        <p>
+                            You'll know visit the city Lalibela and the first group of churches Lalibela, contains 11 monolithic churches that were built in the 12th century and are carved out of the pink granite rock; they have been classified as a UNESCO World Heritage Site.
+                        </p>
+                        <img src="../assets/Lalibela.png" alt="Lalibela" />
+                    </div>
+                </div>
+            </div>
+            <div class="tour-info-modal tour-info-transport">
+                <div class="modal-header">
+                    <p><b>Luxury 53 Seat Executive Coach</b></p>
+                </div>
+                <div class="what-is-included">
+                    <ul style="list-style-type: disc">
+                        <li>53 forward-facing, comfortable, reclining seats</li>
+                        <li>Full air conditioning</li>
+                        <li>USB charging points available on request</li>
+                        <li>Refrigerator</li>
+                    </ul>
+                </div>
+                <img src="../assets/bus.jpg" alt="Bus" />
+            </div>
+            <div class="tour-info-modal tour-info-pricing">
+                <div class="modal-header"><h4>Northern Ethiopia - 7 Days</h4></div>
+                <div class="what-is-included">
+                    <ul style="list-style-type: disc">
+                        <li><b>Prices for this 7 Day Tour start from $ 1750.00</b></li>
+                    </ul>
+                </div>
+                <div class="modal-header"><h4>Important Information:</h4></div>
+                <p>
+                    Quotes are valid for 15 days from date of quote. Your final price may be adjusted should
+                    actual passengers travelling fall below quoted price or if hotels or itinerary are amended.Please complete our tour enquiry form, if you are interested or wish to know more about this
+                    tour.
+
+                </p>
+            </div>
+            <div class="tour-info-modal tour-info-product-enquiry">
+                <div class="modal-header">
+                    <h4>Product Enquiry</h4>
+                    <form class="form-main">
+                        <div>
+                            <div class="form-name">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required />
+                            </div>
+                            <div class="form-email">
+                                <label for="email">Email address</label>
+                                <input type="text" id="email" name="email" placeholder="you@yourdomain.com" required />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="enquiry">
+                                <label for="enquiry">Enquiry</label>
+                                <textarea id="enquiry" placeholder="What would you like to know?"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn"><b>SEND ENQUIRY</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="tour-info-modal tour-info-booking">Booking</div>
+        </section>
+
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="column-1">
+                    <h2>Explore Ethiopia</h2>
+                    <div class="social media">
+                        <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                        <a href="#"><i class="fab fa-twitter"></i> </a>
+                        <a href="#"><i class="fab fa-instagram"></i> </a>
+                    </div>
+                </div>
+                <div class="column-all">
+                    <div class="locations-container">
+                        <h2>Office</h2>
+                        <p>Address</p>
+                        <p>Phone number</p>
+                        <p>Email address</p>
+                    </div>
+                    <div class="links-container">
+                        <h2>Qick Links</h2>
+                        <ul>
+                            <li><a href="../index.html">Home </a></li>
+                            <li><a href="../about.html">About Us</a></li>
+                            <li><a href="../index.html#tour-packages">Tour Packages</a></li>
+                            <li><a href="../index.html#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

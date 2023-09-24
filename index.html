@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--define character set-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/aboutUs.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/tourPackages.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/information.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Explore Ethiopia - The future of travel</title>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <h3>Explore Ethiopia</h3>
+            <nav class="navigation-bar">
+                <a href="index.html">Home </a>
+                <a href="about.html">About</a>
+                <a href="#tour-packages">Tour Packages</a>
+                <a href="#contact-us">Contact</a>
+            </nav>
+
+            <!--Change it to Icon-->
+            <div class="icon">
+                <i class="fas fa-user" id="login-button"></i>
+            </div>
+        </header>
+        
+        <!--Log in Form-->
+        
+        <div class="modal" id="login-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Login</h2>
+                    <label for="username">Username or email:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="form-group">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <p>Forgot password? <a href="#reset-password-modal">Click here</a></p>
+                    <p>Don't have an account? <a href="#create-account-modal">Create one</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--Reset Password Form-->
+        
+        <div class="modal" id="reset-password-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Reset Password</h2>
+                    <p>Enter your email address below and we'll send you instructions on how to reset your password.</p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="submit" value="Reset Password" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--Create Account Form-->
+        <div class="modal" id="create-account-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Create Account</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="submit" value="Create Account" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#login-modal">Log in</a></p>
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+        
+        
+         <!--Home page-->
+        <section class="home-page" id="home-page">
+            <div class="content">
+                <h3>Your Next Adventure is in Ethiopia</h3>
+                <p>Safely travel Ethiopia with us- Adventures, Accomodation, Visa, Bus Travel and more</p>
+                <p></p>
+            </div>
+
+            <div class="video-container">
+                <video src="./assets/Video1.MP4" id="video-slider" loop autoplay muted></video>
+            </div>
+            <div class="video-slider-button">
+                <button class="prev-button">&#60;</button>
+                <button class="next-button">&#62;</button>
+            </div>
+        </section>
+
+        <section id="ethiopia-info">
+            <div class="ethiopia-wrapper">
+                <div class="ethiopia-grid-12">
+                    <div class="ethiopia-content-center">
+                        <h2>Ethiopia</h2>
+                    </div>
+                </div>
+                <div class="ethiopia-grid-12">
+                    <div class="ethiopia-content-center">
+                        <p>Explore Ethiopia is a specialized luxury tour operator that creates bespoke itineraries and exclusive travel experiences across Ethiopia. With extensive knowledge and experience in the industry, we are passionate about Ethiopia and are always up-to-date with the latest offerings. Ethiopia is a land of diverse cultures and stunning landscapes, and we want to share its beauty with you.</p>
+                        <p>Whether you want to explore the ancient city of Axum, trek through the Simien Mountains, or discover the unique tribes of the Omo Valley, we have everything you need at Ethiopia Touring Company. Our team specializes in crafting tailored tours and holidays that meet all your needs and requirements, ensuring that you experience the best of Ethiopia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <section id="features" class="features-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="feature-block">
+                    <i class="icon-why"></i>
+                    <h3 class="feature-title">Why Visit Ethiopia?</h3>
+                    <div class="feature-content">
+                      <p>Ethiopia is a land of contrasts and diversity, from the lush, green Simien Mountains to the barren deserts of the Danakil Depression. But it's not just the natural beauty that draws visitors to this country; it's also the fascinating history and culture, with ancient churches, castles, and monasteries that have stood for centuries.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature-block">
+                    <i class="icon-adventure"></i>
+                    <h3 class="feature-title">Adventure Awaits</h3>
+                    <div class="feature-content">
+                      <p>For the adventurous traveler, Ethiopia offers plenty of opportunities to explore, with hiking, trekking, and camping in some of the most stunning landscapes in Africa. You can also go rafting, kayaking, or even paragliding in the mountains.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="feature-block">
+                    <i class="icon-culture"></i>
+                    <h3 class="feature-title">Experience a Rich Culture</h3>
+                    <div class="feature-content">
+                      <p>Ethiopia has a rich and diverse cultural heritage, with many different ethnic groups and languages. You can experience traditional music, dance, and cuisine, and explore the ancient traditions and customs that have been passed down through the generations.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
+      
+        <!-- ---------- TOUR PACKAGES SECTION ---------- -->
+
+        <section id="tour-packages">
+            <div class="section-header">
+                <h2>Tour Packages</h2>
+            </div>
+
+            <div class="tour-packages-list">
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/north-ethiopia.jpg" alt="Norh Ethiopia" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>North Ethiopia</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">6 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$1.750</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-1.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/The Omo Valley.jpg" alt="The Omo Valley" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>The Omo Valley</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">6 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$1.479</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-2.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/South Ethiopia.jpg" alt="South Ethiopia" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>Southern Ethiopia</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">8 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$2.339</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-3.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/Danakil Depression.jpg" alt="Danakil Depression" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>The Danakil Depression</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">6 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$2.280</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-4.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/harar-east.jpg" alt="Norh Ethiopia" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>Harar and the East</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">4 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$850</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-5.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/Historic-routes.jpg" alt="Norh Ethiopia" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>Historic Routes</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">15 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$2.750</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-6.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/north-ethiopia.jpg" alt="Norh Ethiopia" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>North Ethiopia</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">6 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$1.750</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-7.html')">View tour</button>
+                    </div>
+                </div>
+
+                <div class="tour-packages-card">
+                    <div class="tour-packages-img">
+                        <img src="./assets/north-ethiopia.jpg" alt="Norh Ethiopia" />
+                    </div>
+                    <div class="tour-packages-title">
+                        <h4>North Ethiopia</h4>
+                    </div>
+                    <div class="tour-packages-details">
+                        <div class="tour-packages-length">
+                            <div><span class="package-label">Tour length</span></div>
+                            <div>
+                                <span class="days">6 days</span>
+                            </div>
+                        </div>
+                        <div class="tour-packages-price">
+                            <div><span style="font-size: 2rem">From</span></div>
+                            <div>
+                                <span><span class="package-label">US</span> <span class="price">$1.750</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-packages-view-tour">
+                        <button type="button" onclick="navigateToTour('tour-8.html')">View tour</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----------------CONTACT US SECTION------------------------- -->
+
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Send" class="btn">
+            </form>
+        </section>
+        
+         <!-- -----------------Footer Section------------------------- -->
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="column-1">
+                    <h2>Explore Ethiopia</h2>
+                    <div class="social media">
+                        <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                        <a href="#"><i class="fab fa-twitter"></i> </a>
+                        <a href="#"><i class="fab fa-instagram"></i> </a>
+                    </div>
+                </div>
+                <div class="column-all">
+                    <div class="locations-container">
+                        <h2>Office</h2>
+                        <p>Address</p>
+                        <p>Phone number</p>
+                        <p>Email address</p>
+                    </div>
+                    <div class="links-container">
+                        <h2>Qick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#tour-packages">Tour Packages</a></li>
+                            <li><a href="about.html#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

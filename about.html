@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--define character set-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/aboutUs.css" />
+        <link rel="stylesheet" type="text/css" href="./styles/information.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Explore Ethiopia - The future of travel</title>
+        <script src="about.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <h3>Explore Ethiopia</h3>
+            <nav class="navigation-bar">
+                <a href="index.html">Home </a>
+                <a href="about.html">About Us</a>
+                <a href="index.html#tour-packages">Tour Packages</a>
+                <a href="index.html#contact-us">Contact Us</a>
+            </nav>
+
+            <!--Change it to Icon-->
+            <div class="icon">
+                <i class="fas fa-user" id="login-button"></i>
+            </div>
+        </header>
+            <!--Log in Form-->
+        
+        <div class="modal" id="login-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Login</h2>
+                    <label for="username">Username or email:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="form-group">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <p>Forgot password? <a href="#reset-password-modal">Click here</a></p>
+                    <p>Don't have an account? <a href="#create-account-modal">Create one</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="reset-password-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Reset Password</h2>
+                    <p>Enter your email address below and we'll send you instructions on how to reset your password.</p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="submit" value="Reset Password" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="create-account-modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <form action="" method="post">
+                    <h2>Create Account</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="submit" value="Create Account" class="btn">
+                </form>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#login-modal">Log in</a></p>
+                    <button type="button" class="back-button">Back</button>
+                </div>
+            </div>
+        </div>
+        
+       
+        <section class="Sub-page" id="Sub-page">
+
+        </section>
+
+        <section class="information">
+            <div class="wrapper">
+              <div class="grid-12">
+                <div class="content-center">
+                  <h1>Discover Hidden Treasures of Ethiopia with Us</h1>
+                </div>
+              </div>
+              <div class="grid-12">
+                <div class="content-center">
+                    <p>We are Explore Ethiopia, a team of passionate travel enthusiasts dedicated to providing you with the best experience in Ethiopia. Our mission is to help you discover the hidden treasures of Ethiopia through our curated tour packages that cater to your interests and budget.</p>
+                    <p>With our expert knowledge of the country, we can take you to stunning destinations like the Danakil Depression, the Simien Mountains, the ancient city of Axum, and the historic city of Lalibela. We pride ourselves on our commitment to sustainable tourism and our efforts to support local communities and preserve the natural environment.</p>
+                    <p>Join us on a journey of a lifetime and discover the beauty and richness of Ethiopia!</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        
+        <section id="about-us">
+        
+            <div class="reasons-container">
+                <h2>Why Choose Explore Ethiopia?</h2>
+                <div class="reasons-grid">
+                    <div class="reason">
+                        <img src="./assets/reason-1.jpg" alt="Reason 1">
+                        <h3>Expert Guides</h3>
+                        <p>Our guides are knowledgeable about the local culture, history, and geography, making your experience informative and enjoyable.</p>
+                    </div>
+                    <div class="reason">
+                        <img src="./assets/reason-2.jpg" alt="Reason 2">
+                        <h3>Sustainable Tourism</h3>
+                        <p>We are committed to sustainable tourism, supporting local communities and preserving the natural environment.</p>
+                      </div>
+                    
+
+                    <div class="reason">
+                        <img src="./assets/reason-3.jpg" alt="Reason 3">
+                        <h3>Best Accommodation</h3>
+                        <p>We provide the best accommodation options that suit your preferences and budget, ensuring a comfortable and enjoyable stay during your trip.</p>
+                    </div>
+                    <div class="reason">
+                        <img src="./assets/reason-4.jpg" alt="Reason 4">
+                        <h3>Unforgettable Experiences</h3>
+                        <p>We take you to stunning destinations like the Danakil Depression, the Simien Mountains, and the historic city of Lalibela, creating unforgettable memories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------Footer ------------------------ -->
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="column-1">
+                    <h2>Explore Ethiopia</h2>
+                    <div class="social media">
+                        <a href="#"><i class="fab fa-facebook-f"></i> </a>
+                        <a href="#"><i class="fab fa-twitter"></i> </a>
+                        <a href="#"><i class="fab fa-instagram"></i> </a>
+                    </div>
+                </div>
+                <div class="column-all">
+                    <div class="locations-container">
+                        <h2>Office</h2>
+                        <p>Address</p>
+                        <p>Phone number</p>
+                        <p>Email address</p>
+                    </div>
+                    <div class="links-container">
+                        <h2>Qick Links</h2>
+                        <ul>
+                            <li><a href="../#home">Home </a></li>
+                            <li><a href="../#about-us">About Us</a></li>
+                            <li><a href="../#tour-packages">Tour Packages</a></li>
+                            <li><a href="../#contact-us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
